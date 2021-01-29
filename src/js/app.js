@@ -2,10 +2,20 @@
 import {settings, classNames, select} from './settings.js';
 import Product from './components/Product.js'
 import Cart from './components/Cart.js';
+import Booking from './components/booking.js';
 
 
 
   const app = {
+
+    initBooking: function(){
+      const thisApp = this;
+
+      thisApp.bookingContainer = document.querySelector(select.containerOf.booking);
+      new Booking(thisApp.bookingContainer);
+
+    },
+
     initPages: function(){
       const thisApp = this;
 
@@ -24,7 +34,6 @@ import Cart from './components/Cart.js';
 
       thisApp.activatePage(pageMatchingHash);
      
-
      for(let link of thisApp.navLinks){
        link.addEventListener('click', function(event){
         const clickedElement = this;
@@ -81,9 +90,8 @@ import Cart from './components/Cart.js';
     init: function () {
       const thisApp = this;
       thisApp.initData();
-
-      thisApp.initPages()
-      
+      thisApp.initPages();
+      thisApp.initBooking();
     },
 
     initCart: function () {
