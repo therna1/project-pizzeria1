@@ -209,7 +209,7 @@
   "event": [
     {
       "id": 1,
-      "date": "2019-01-01",
+      "date": "2021-01-01",
       "hour": "12:30",
       "table": 1,
       "repeat": false,
@@ -258,6 +258,8 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": []
+  "booking": [
+ 
+  ]
 }
 
