@@ -38,7 +38,7 @@ export const select = {
         wrapper: '.hour-picker',
         input: 'input[type="range"]',
         output: '.output',
-      },
+      }
     },
 
     cart: {
@@ -68,7 +68,8 @@ export const select = {
     nav: {
       links: '.main-nav a',
     },
-  };
+  }
+
 
   export const classNames = {
     menuProduct: {
@@ -89,6 +90,7 @@ export const select = {
     pages: {
       active: 'active',
     },
+
   };
 
   export const settings = {

@@ -119,6 +119,7 @@ class Cart {
           deliveryFee: thisCart.deliveryFee,
           products: []
       };
+    
 
     for(let prod of thisCart.products) {
       payload.products.push(prod.getData());
@@ -133,7 +134,9 @@ class Cart {
     };
     
     fetch(url, options)
-};
+
+  };  
+
   };
 
   export default Cart;

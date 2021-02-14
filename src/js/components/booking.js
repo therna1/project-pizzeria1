@@ -240,8 +240,6 @@ class Booking {
         };
         fetch(url, options)
 
-            
-        
     };
 
 };

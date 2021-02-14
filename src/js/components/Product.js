@@ -22,6 +22,7 @@ class Product {
       thisProduct.element = utils.createDOMFromHTML(HTML);
       const menuContainer = document.querySelector(select.containerOf.menu);
       menuContainer.appendChild(thisProduct.element);
+
     };
 
     getElements() {
@@ -118,8 +119,6 @@ class Product {
 
     addToCart() {
       const thisProduct = this;
-
-     // app.cart.add(thisProduct.prepareCartProduct());
 
      const event = new CustomEvent('add-to-cart', {
        bubbles: true,
